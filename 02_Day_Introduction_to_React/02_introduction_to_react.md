@@ -4,7 +4,6 @@
 
 <sub>Author:
 <a>Romel Mejos</a><br>
-<small> 2026</small>
 </sub>
 
 </div>
