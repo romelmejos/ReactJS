@@ -6,20 +6,6 @@
 
 
 
-- [Components](#components)
-  - [Big picture of components](#big-picture-of-components)
-  - [JavaScript function](#javascript-function)
-  - [JavaScript Class](#javascript-class)
-  - [Creating React Component](#creating-react-component)
-    - [Functional Component](#functional-component)
-    - [Rendering components](#rendering-components)
-    - [Injecting data to JSX in React Component](#injecting-data-to-jsx-in-react-component)
-    - [Further on Functional components](#further-on-functional-components)
-- [Exercises: Components](#exercises-components)
-  - [Exercises: Level 1](#exercises-level-1)
-  - [Exercises: Level 2](#exercises-level-2)
-  - [Exercises: Level 3](#exercises-level-3)
-
 # Components
 
 Components are like functions that return HTML elements.
@@ -46,7 +32,7 @@ function Car() {
 
 ## Rendering a Component
 
-Now your React application has a component called Car, which returns an <h2> element.
+Now your React application has a component called Car, which returns an ```<h2>``` element.
 
 To use this component in your application, refer to it like this: <Car />
 
@@ -113,6 +99,7 @@ We can render a component multiple times:
 
 Example
 Use the Car component twice inside the Garage component:
+
 ```js
 function Car() {
   return (
@@ -139,7 +126,7 @@ The example above might be a bit useless, but if we change the content of the Ca
 
 Example
 Use the Car component to display two different cars:
-```
+```js
 function Car(props) {
   return (
     <h2>I am a {props.brand}!</h2>
@@ -171,7 +158,7 @@ Note that the filename must start with an uppercase character.
 
 Example
 This is the new file, we named it Vehicle.jsx:
-```
+```js
 Vehicle.jsx
 function Car() {
   return (
