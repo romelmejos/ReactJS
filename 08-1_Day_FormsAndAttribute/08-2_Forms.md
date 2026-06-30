@@ -1,6 +1,6 @@
 <div align="center">
   <h1> React Forms</h1>
- 
+</div>
 
 # React Forms
 Just like in HTML, React uses forms to allow users to interact with the web page.
