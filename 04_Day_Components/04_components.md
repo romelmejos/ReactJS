@@ -22,24 +22,183 @@
 
 # Components
 
-A React component is a small, reusable code, which is responsible for one part of the application UI. A React application is an aggregation of components. React can help us to build reusable components. The following diagram shows different components. All the components have different border colors. In React we assemble different components together to create an application. We use JavaScript functions or classes to make components. If we use a function, the component will be a functional component, but if we use a class, the component will be a class-based component.
+Components are like functions that return HTML elements.
 
-Components can be:
+Components are independent and reusable bits of code. They serve the same purpose as JavaScript functions, but work in isolation and return HTML.
 
-- Functional Component / Presentational Component / Stateless Component / Dumb Component
-- Class Component / Container Component/ Statefull Component / Smart Component
+Components come in two types, Class components and Function components, in this tutorial we will concentrate on Function components.
 
-The classification of components above does not work for the latest version of React, but it is good to know the former definition and how the previous versions work.
+## Create Your First Component
 
-So, let us change all the JSX to components. Components in React are JavaScript functions or classes, that return a JSX. Component name must start with an uppercase, and if the name is two words, it should be CamelCase - a camel with two humps.
+When creating a React component, the component's name MUST start with an upper case letter.
 
-## Big picture of components
+React components returns HTML code.
 
-In the previous section we agreed, that a website or an application is made of buttons, forms, texts, media objects, header, section, article and footer. If we have a million-dollar button, we can use this button all the time, instead of recreating it all over again, whenever we need a button. The same goes for input fields, forms, header or footer. That is where the power of the component comes. In the following diagram, the header, main and footer are components. Inside the main there is also a user card component and a text section component. All the different colors represent different components. How many colors do you see? Each color represent a single component. We have five components in this diagram.
+Example:
+Create a Function component called Car
+```js
+function Car() {
+  return (
+    <h2>Hi, I am a Car!</h2>
+  );
+}
+```
 
-![Components](../images/components_example.png)
+## Rendering a Component
 
-Before we jump into React components, let's do some functions and class refreshers.
+Now your React application has a component called Car, which returns an <h2> element.
+
+To use this component in your application, refer to it like this: <Car />
+
+Example:
+Display the Car component in the "root" element:
+```js
+createRoot(document.getElementById('root')).render(
+  <Car />
+)
+```
+
+## Props
+
+Arguments can be passed into a component as props, which stands for properties.
+
+You send the arguments into the component as HTML attributes.
+
+You will learn more about props in our React Props chapter.
+
+Example:
+Use an attribute to pass a color to the Car component, and use it in the render function:
+```js
+function Car(props) {
+  return (
+    <h2>I am a {props.color} Car!</h2>
+  );
+}
+
+createRoot(document.getElementById('root')).render(
+  <Car color="red"/>
+);
+```
+
+## Components in Components
+
+We can refer to components inside other components:
+
+Example:
+Use the Car component inside the Garage component:
+```js
+function Car() {
+  return (
+    <h2>I am a Car!</h2>
+  );
+}
+
+function Garage() {
+  return (
+    <>
+      <h1>Who lives in my Garage?</h1>
+      <Car />
+    </>
+  );
+}
+
+createRoot(document.getElementById('root')).render(
+  <Garage />
+);
+```
+
+## Rendering a Component Twice
+
+We can render a component multiple times:
+
+Example
+Use the Car component twice inside the Garage component:
+```js
+function Car() {
+  return (
+    <h2>I am a Car!</h2>
+  );
+}
+
+function Garage() {
+  return (
+    <>
+      <h1>Who lives in my Garage?</h1>
+      <Car />
+      <Car />
+    </>
+  );
+}
+
+createRoot(document.getElementById('root')).render(
+  <Garage />
+);
+```
+
+The example above might be a bit useless, but if we change the content of the Car component, by using arguments, it makes more sense:
+
+Example
+Use the Car component to display two different cars:
+```
+function Car(props) {
+  return (
+    <h2>I am a {props.brand}!</h2>
+  );
+}
+
+function Garage() {
+  return (
+    <>
+      <h1>Who lives in my Garage?</h1>
+      <Car brand="Ford" />
+      <Car brand="BMW" />
+    </>
+  );
+}
+
+createRoot(document.getElementById('root')).render(
+  <Garage />
+);
+```
+
+## Components in Files
+
+React is all about re-using code, and it can be a good idea to split your components into separate files.
+
+To do that, create a new file in the src folder with a .jsx file extension and put the code inside it:
+
+Note that the filename must start with an uppercase character.
+
+Example
+This is the new file, we named it Vehicle.jsx:
+```
+Vehicle.jsx
+function Car() {
+  return (
+    <h2>Hi, I am a Car!</h2>
+  );
+}
+
+export default Car;
+```
+
+To be able to use the Car component, you have to import the Vehicle.jsx file in your application.
+
+Example:
+Now we import the Vehicle.jsx file in the application, and we can use the Car component as if it was created here.
+```js
+main.jsx
+import { createRoot } from 'react-dom/client'
+import Car from './Vehicle.jsx';
+
+createRoot(document.getElementById('root')).render(
+  <Car />
+);
+```
+
+
+
+
 
 ## JavaScript function
 
