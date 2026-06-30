@@ -1,11 +1,6 @@
 <div align="center">
   <h1> Getting Started with ReactJS</h1>
-  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
-  <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
-  </a>
-  <a class="header-badge" target="_blank" href="https://twitter.com/Asabeneh">
-  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/asabeneh?style=social">
-  </a>
+ 
 
 <sub>Author:
 <a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Romel Mejos</a><br>
@@ -14,15 +9,13 @@
 
 </div>
 
-[<< Day 1](../01_Day_JavaScript_Refresher/01_javascript_refresher.md) | [Day 3 >>](../03_Day_Setting_Up/03_setting_up.md)
 
-![30 Days of React banner](../images/30_days_of_react_banner_day_2.jpg)
 
 - [Getting Started React](#getting-started-react)
   - [1. What is React?](#1-what-is-react)
   - [2. Why React?](#2-why-react)
-    - [React vs Vue popularity in October 2020](#react-vs-vue-popularity-in-october-2020)
-    - [React vs Vue popularity in February 2020](#react-vs-vue-popularity-in-february-2020)
+    - [React vs Vue popularity](#react-vs-vue-popularity-in-october-2020)
+    - [React vs Vue popularity ](#react-vs-vue-popularity-in-february-2020)
   - [3. JSX](#3-jsx)
     - [JSX Element](#jsx-element)
     - [Commenting a JSX element](#commenting-a-jsx-element)
@@ -65,7 +58,7 @@ To summarize:
 - React is a JavaScript library for building user interfaces
 - React is used to build single page applications - An application which has only one HTML page.
 - React allows us to create reusable UI components
-- React latest release is 16.13.1
+- React latest release 
 - [React versions](https://reactjs.org/versions/)
 - React official documentation can be found [here](https://reactjs.org/docs/getting-started.html)
 
@@ -73,25 +66,7 @@ To summarize:
 
 React is one of the most popular JavaScript libraries. Many developers and companies have been using it for the last couple of years. Its popularity has been growing fast and it has a huge community. How do we measure popularity? One measure of popularity could be GitHub repository stars, watchers and forks. Let us compare the popularity of [React](https://github.com/facebook/react) and [Vue](https://github.com/vuejs/vue). As of today, the popularity between the two most popular JavaScript looks like as shown on the diagram. From the diagram, you can speculate the most popular JavaScript library. You may look at the number of watchers, stars and forks for both React and Vue. These alone will not be a very good measure of popularity, but still it tells a little bit about the popularity of the two technologies. If I have to recommend another JavaScript library next to React, it would be Vue.js.
 
-#### React vs Vue popularity in October 2020
-
-React Official GitHub Repository
-
-![React Popularity October 2020](../images/react_repo_1_oct_2020.png)
-
-Vue Official GitHub Repository
-
-![Vue Popularity October 2020](../images/vue_repo_1_oct_2020.png)
-
-#### React vs Vue popularity in February 2020
-
-React Official GitHub Repository
-
-![React Popularity February 2020](../images/react_popularity.png)
-
-Vue Official GitHub Repository
-
-![Vue Popularity February 2020](../images/vue_popularity.png)
+#### React vs Vue popularity 
 
 Why we choose to use React ? We use it because of the following reasons:
 
