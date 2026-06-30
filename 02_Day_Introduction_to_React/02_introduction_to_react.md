@@ -3,8 +3,8 @@
  
 
 <sub>Author:
-<a href="www.linkedin.com/in/romel-mejos-3b05733a1" target="_blank">Romel Mejos</a><br>
-<small> June, 2026</small>
+<a>Romel Mejos</a><br>
+<small> 2026</small>
 </sub>
 
 </div>
