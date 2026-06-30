@@ -1,5 +1,5 @@
 <div align="center">
-  <h1> 30 Days Of React: Getting Started React</h1>
+  <h1> Getting Started with ReactJS</h1>
   <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
   <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
   </a>
@@ -8,8 +8,8 @@
   </a>
 
 <sub>Author:
-<a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
-<small> October, 2020</small>
+<a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Romel Mejos</a><br>
+<small> June, 2026</small>
 </sub>
 
 </div>
