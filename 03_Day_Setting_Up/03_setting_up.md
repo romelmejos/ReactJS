@@ -252,6 +252,226 @@ Congratulations! You've just modified your first React application.
 
 
 
+### React Render HTML
+
+React's goal is in many ways to render HTML in a web page.
+
+React renders HTML to the web page via a container, and a function called createRoot().
+
+## The Container 
+
+React uses a container to render HTML in a web page.
+
+Typically, this container is a <div id="root"></div> element in the index.html file.
+
+If you have followed the steps in the previous chapter, you should have a file called index.html in the root directory of your project:
+
+Example
+The default content of the index.html file:
+```sh
+index.html
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>my-react-app</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+```
+
+To better understand the content of the index.html file, let's remove all the code we don't need.
+
+Example
+The index.html file should now look like this:
+```sh
+index.html
+<!doctype html>
+<html lang="en">
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+```
+
+The file is now stripped from unnecessary code, and we can concentrate on learning React without any disturbing elements.
+
+## The createRoot Function
+
+The createRoot function is located in the main.jsx file in the src folder, and is a built-in function that is used to create a root node for a React application.
+
+Example
+The default content of the src/main.jsx file:
+```sh
+main.jsx
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import './index.css'
+import App from './App.jsx'
+
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
+      <App />
+    </StrictMode>
+  )
+
+```
+
+The createRoot() function takes one argument, an HTML element.
+
+The purpose of the function is to define the HTML element where a React component should be displayed.
+
+To better understand the createRoot function, let's remove unnecessary code and write our own "Hello React!" example:
+
+Example
+The src/main.jsx file should now look like this:
+```sh
+main.jsx
+import { createRoot } from 'react-dom/client'
+
+createRoot(document.getElementById('root')).render(
+  <h1>Hello React!</h1>
+)
+
+```
+
+If you save the file, the result in the browser will look like this:
+
+
+## The render Method
+Did you notice the render method?
+
+The render method defines what to render in the HTML container.
+
+The result is displayed in the <div id="root"> element.
+
+Example
+Display a paragraph inside the "root" element:
+```sh
+main.jsx
+import { createRoot } from 'react-dom/client'
+
+createRoot(document.getElementById('root')).render(
+  <p>Welcome!</p>
+)
+```
+
+
+Note: the element id does not have to be "root", but this is the standard convention.
+
+
+
+## The HTML Code
+
+The HTML code in this tutorial uses JSX which allows you to write HTML tags inside the JavaScript code:
+
+Don't worry if the syntax is unfamiliar, you will learn more about JSX later in this lesson.
+
+Example
+Create a variable that contains HTML code and display it in the "root" node:
+```sh
+main.jsx
+import { createRoot } from 'react-dom/client'
+
+const myelement = (
+  <table>
+    <tr>
+      <th>Name</th>
+    </tr>
+    <tr>
+      <td>John</td>
+    </tr>
+    <tr>
+      <td>Elsa</td>
+    </tr>
+  </table>
+);
+
+createRoot(document.getElementById('root')).render(
+  myelement
+)
+```
+
+## The Root Node
+The root node is the HTML element where you want to display the result.
+
+It is like a container for content, managed by React.
+
+It does NOT have to be a <div> element and it does NOT have to have the id='root':
+
+Example
+The root node can be called whatever you like.
+
+Display the result in the <header id="sandy"> element:
+```sh
+index.htmlmain.jsx
+<!doctype html>
+<html lang="en">
+  <body>
+    <header id="sandy"></header>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 Run this command to create a React application named my-react-app:
