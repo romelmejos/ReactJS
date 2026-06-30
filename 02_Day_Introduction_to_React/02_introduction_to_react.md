@@ -93,6 +93,30 @@ const data = <small>June 2026</small>
 
 The above strange looking code seems like JavaScript and it seems like , but it is not JavaScript and it seems like HTML but not completely an HTML element. It is a mix of JavaScript and an HTML elements. JSX can allow us to use HTML in JavaScript. The HTML element in the JSX above is _h1_ and _small_.
 
+
+#### JSX Expressions
+
+Expressions - You can insert any valid JavaScript expression inside JSX by wrapping it in curly braces { }.
+
+React will evaluate the expression and render the result in the DOM.
+
+Example
+Execute the expression 218 * 1.36:
+
+```js
+function Car() {
+  return (
+    <>
+      <h1>My car</h1>
+      <p>It has {218 * 1.36} horsepower</p>
+    </>
+  );
+} 
+```
+
+
+
+
 #### JSX Element
 
 As you have seen in the example above, JSX has a JavaScript and HTML like syntax. JSX element could be a single HTML element or many HTML elements wrapped in a parent HTML element.
