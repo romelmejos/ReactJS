@@ -131,7 +131,7 @@ The following expression is a JSX element.
 const header = (
   <header style={headerStyles}>
     <div className='header-wrapper'>
-      <h1>Welcome to 30 Days Of React</h1>
+      <h1>Welcome to React</h1>
       <h2>Getting Started React</h2>
       <h3>JavaScript Library</h3>
       <p>Asabeneh Yetayeh</p>
@@ -151,7 +151,7 @@ const Header = () => {
   return (
     <header style={headerStyles}>
       <div className='header-wrapper'>
-        <h1>Welcome to 30 Days Of React</h1>
+        <h1>Welcome to React</h1>
         <h2>Getting Started React</h2>
         <h3>JavaScript Library</h3>
         <p>Asabeneh Yetayeh</p>
@@ -166,7 +166,7 @@ const Header = () => {
 const Header = () => (
   <header style={headerStyles}>
     <div className='header-wrapper'>
-      <h1>Welcome to 30 Days Of React</h1>
+      <h1>Welcome to  React</h1>
       <h2>Getting Started React</h2>
       <h3>JavaScript Library</h3>
       <p>Asabeneh Yetayeh</p>
@@ -178,7 +178,7 @@ const Header = () => (
 
 ### Rendering components
 
-Now, lets change all the JSX elements we had to components. When we call JSX element we use curly brackets and when we call components we do as follows <ComponentName />. If we pass an attribute, when we call the component name, we call it props(<ComponentName propsName = {'data-type'} />). We will talk about props in another section.[Live on code pen](https://codepen.io/Asabeneh/full/wvaKKEM)
+Now, lets change all the JSX elements we had to components. When we call JSX element we use curly brackets and when we call components we do as follows <ComponentName />. If we pass an attribute, when we call the component name, we call it props(<ComponentName propsName = {'data-type'} />). We will talk about props in another section.
 
 Let's render first the _Header_ component.
 
@@ -191,7 +191,7 @@ import ReactDOM from 'react-dom'
 const Header = () => (
   <header>
     <div className='header-wrapper'>
-      <h1>Welcome to 30 Days Of React</h1>
+      <h1>Welcome to React</h1>
       <h2>Getting Started React</h2>
       <h3>JavaScript Library</h3>
       <p>Asabeneh Yetayeh</p>
@@ -217,7 +217,7 @@ import asabenehImage from './images/asabeneh.jpg'
 const Header = () => (
   <header>
     <div className='header-wrapper'>
-      <h1>Welcome to 30 Days Of React</h1>
+      <h1>Welcome to  React</h1>
       <h2>Getting Started React</h2>
       <h3>JavaScript Library</h3>
       <p>Asabeneh Yetayeh</p>
@@ -289,7 +289,7 @@ In this section we inject only strings
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-const welcome = 'Welcome to 30 Days Of React'
+const welcome = 'Welcome to React'
 const title = 'Getting Started React'
 const subtitle = 'JavaScript Library'
 const firstName = 'Asabeneh'
@@ -323,7 +323,7 @@ Similar to the Header component we can implement to Main and Footer component.
 // To get the root element from the HTML document
 const rootElement = document.querySelector('.root')
 // JSX element, header
-const welcome = 'Welcome to 30 Days Of React Challenge'
+const welcome = 'Welcome to React Challenge'
 const title = 'Getting Started React'
 const subtitle = 'JavaScript Library'
 const author = {
