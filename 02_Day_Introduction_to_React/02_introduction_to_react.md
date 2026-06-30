@@ -174,6 +174,7 @@ function Car() {
 JSX allows you to insert attributes into HTML elements, but there are a few important differences.
 
 class = className
+
 The class attribute is a much used attribute in HTML, but since JSX is rendered as JavaScript, and the class keyword is a reserved word in JavaScript, you are not allowed to use it in JSX.
 
 JSX solved this by using className instead. When JSX is rendered, it translates className attributes into class attributes.
