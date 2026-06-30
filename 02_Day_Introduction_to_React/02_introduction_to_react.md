@@ -113,6 +113,163 @@ function Car() {
   );
 } 
 ```
+Variables - are also valid expressions. Insert variables in JSX by wrapping it in curly braces { }.
+Example
+Use a variable inside JSX:
+
+```js
+function Car() {
+  const hp = 218 * 1.36;
+  return (
+    <>
+      <h1>My car</h1>
+      <p>It has {hp} horsepower</p>
+    </>
+  );
+}
+```
+Function Calls - are valid expressions. Insert function calls in JSX by wrapping it in curly braces { }.
+
+Example
+Use a function inside JSX:
+
+```js
+function kwtohp(kw) {
+  return kw * 1.36;
+}
+
+function Car() {
+  return (
+    <>
+      <h1>My car</h1>
+      <p>It has {kwtohp(218)} horsepower</p>
+    </>
+  );
+}
+```
+
+Object Properties - Access object properties within JSX:
+
+Example
+Refer to an object property inside JSX:
+
+```js
+function Car() {
+  const myobj = {
+    name: "Fiat",
+    model: "500",
+    color: "white"
+  };
+  return (
+    <>
+      <h1>My car is a {myobj.color} {myobj.name} {myobj.model}</h1>
+    </>
+  );
+}
+```
+
+
+#### JSX Attributes
+
+JSX allows you to insert attributes into HTML elements, but there are a few important differences.
+
+class = className
+The class attribute is a much used attribute in HTML, but since JSX is rendered as JavaScript, and the class keyword is a reserved word in JavaScript, you are not allowed to use it in JSX.
+
+JSX solved this by using className instead. When JSX is rendered, it translates className attributes into class attributes.
+
+Example
+Use attribute className instead of class in JSX:
+
+```js
+function Car() {
+  return (
+    <h1 className="myclass">Hello World</h1>
+  );
+}
+```
+
+Expressions as Attributes
+You can also use JavaScript expressions as attribute values. This is very useful for dynamic attributes.
+
+Example
+Use JavaScript expressions as attribute values:
+```js
+function Car() {
+  const x = "myclass";
+  return (
+    <h1 className={x}>Hello World</h1>
+  );
+}
+```
+
+Note that the attribute value is not wrapped in quotes, this is important when using expressions (JavaScript variables) as attribute values. If you use quotes, JSX will treat it as a string literals and not a JavaScript expression.
+
+camelCase Event Attributes
+Event attributes in JSX are written in camelCase.
+
+Example
+Use camelCase for event attributes:
+```js
+function Car() {
+  const myfunc = () => {
+    alert('Hello World');
+  };
+  return (
+    <button onClick={myfunc}>Click me</button>
+  );
+}
+```
+Boolean Attributes
+If you pass no value for an attribute, JSX treats it as true. To pass false, you must specify it as an expression.
+
+Example
+Boolean true in JSX, this will make the button disabled:
+```js
+<button onClick={myfunc} disabled>Click me</button>
+```
+Example
+Also true in JSX, this will also make the button disabled:
+```js
+<button onClick={myfunc} disabled={true}>Click me</button>
+```
+Example
+False in JSX, this will NOT make the button disabled:
+```js
+<button onClick={myfunc} disabled={false}>Click me</button>
+```
+
+The style Attribute
+The style attribute in JSX only accepts a JavaScript object with camelCased CSS property names, rather than a CSS string (as in HTML).
+
+Example
+Use the style attribute:
+```js
+function Car() {
+  const mystyles = {
+    color: "red",
+    fontSize: "20px",
+    backgroundColor: "lightyellow",
+  };
+
+  return (
+    <>
+      <h1 style={mystyles}>My car</h1>
+    </>
+  );
+}
+```
+Notice two things about the example above.
+
+The styles are stored in an object.
+
+Style properties are written in camelCase, e.g. fontSize, instead of font-size.
+This is an important difference between HTML and JSX.
+
+
+
+
+
 
 
 
