@@ -14,8 +14,8 @@
 - [Getting Started React](#getting-started-react)
   - [1. What is React?](#1-what-is-react)
   - [2. Why React?](#2-why-react)
-    - [React vs Vue popularity](#react-vs-vue-popularity-in-october-2020)
-    - [React vs Vue popularity ](#react-vs-vue-popularity-in-february-2020)
+    - [React vs Vue popularity](#react-vs-vue-popularity-in-october-2026)
+    - [React vs Vue popularity ](#react-vs-vue-popularity-in-february-2026)
   - [3. JSX](#3-jsx)
     - [JSX Element](#jsx-element)
     - [Commenting a JSX element](#commenting-a-jsx-element)
@@ -129,8 +129,8 @@ const header = (
     <h1>Welcome to React</h1>
     <h2>Getting Started React</h2>
     <h3>JavaScript Library</h3>
-    <p>Asabeneh Yetayeh</p>
-    <small>Oct 2, 2020</small>
+    <p>Romel Mejos</p>
+    <small>2026</small>
   </header>
 )
 ```
@@ -148,7 +148,7 @@ We comment codes for different reasons and it is also good to know how to commen
     <h1>Welcome to  React</h1>
     <h2>Getting Started React</h2>
     <h3>JavaScript Library</h3>
-    <p>Asabeneh Yetayeh</p>
+    <p>Romel Mejos</p>
     <small>2026</small>
   </header>
 
@@ -279,7 +279,7 @@ Let us render more content. To render more content, the JSX element should have 
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>30 Days Of React Challenge</title>
+    <title> React Challenge</title>
   </head>
 
   <body>
@@ -304,8 +304,8 @@ Let us render more content. To render more content, the JSX element should have 
           <h1>Welcome to   Of React</h1>
           <h2>Getting Started React</h2>
           <h3>JavaScript Library</h3>
-          <p>Asabeneh Yetayeh</p>
-          <small>Oct 2, 2020</small>
+          <p>Romel Mejos</p>
+          <small>2026</small>
         </header>
       )
 
@@ -343,7 +343,7 @@ JSX element for the footer part of the website.
 // JSX element
 const footer = (
   <footer>
-    <p>Copyright 2020</p>
+    
   </footer>
 )
 ```
@@ -357,8 +357,8 @@ const header = (
     <h1>Welcome to React</h1>
     <h2>Getting Started React</h2>
     <h3>JavaScript Library</h3>
-    <p>Asabeneh Yetayeh</p>
-    <small>Oct 2, 2020</small>
+    <p>Romel Mejos</p>
+    <small>Oct 2, 2026</small>
   </header>
 )
 
@@ -377,7 +377,7 @@ const main = (
 // JSX element for the footer part of the website
 const footer = (
   <footer>
-    <p>Copyright 2020</p>
+    <p>Copyright 2026</p>
   </footer>
 )
 
@@ -424,8 +424,8 @@ const app = (
           <h1>Welcome to React</h1>
           <h2>Getting Started React</h2>
           <h3>JavaScript Library</h3>
-          <p>Asabeneh Yetayeh</p>
-          <small>Oct 2, 2020</small>
+          <p>Romel Mejos</p>
+          <small>Oct 2, 2026</small>
         </header>
       )
 
@@ -444,7 +444,7 @@ const app = (
       // JSX element, footer
       const footer = (
         <footer>
-          <p>Copyright 2020</p>
+          <p>Copyright 2026</p>
         </footer>
       )
 
@@ -489,8 +489,8 @@ const header = (
     <h1>Welcome to  React</h1>
     <h2>Getting Started React</h2>
     <h3>JavaScript Library</h3>
-    <p>Asabeneh Yetayeh</p>
-    <small>Oct 2, 2020</small>
+    <p>Romel Mejos</p>
+    <small>Oct 2, 2026</small>
   </header>
 )
 
@@ -503,8 +503,8 @@ const header = (
     <h1>Welcome to React</h1>
     <h2>Getting Started React</h2>
     <h3>JavaScript Library</h3>
-    <p>Asabeneh Yetayeh</p>
-    <small>Oct 2, 2020</small>
+    <p>Romel Mejos</p>
+    <small>Oct 2, 2026</small>
   </header>
 )
 ```
@@ -573,8 +573,8 @@ Now, you know how to use the inline style and how to use className. Let us style
             <h1>Welcome to React</h1>
             <h2>Getting Started React</h2>
             <h3>JavaScript Library</h3>
-            <p>Asabeneh Yetayeh</p>
-            <small>Oct 2, 2020</small>
+            <p>Romel Mejos</p>
+            <small>Oct 2, 2026</small>
           </div>
         </header>
       )
@@ -600,7 +600,7 @@ Now, you know how to use the inline style and how to use className. Let us style
       // JSX element, footer
       const footer = (
         <footer style={footerStyles}>
-          <p>Copyright 2020</p>
+          <p>Copyright 2026</p>
         </footer>
       )
 
@@ -740,8 +740,8 @@ Instead of style object using regular styling method is more easy than the one a
             <h1>Welcome to  React</h1>
             <h2>Getting Started React</h2>
             <h3>JavaScript Library</h3>
-            <p>Instructor: Asabeneh Yetayeh</p>
-            <small>Date: Oct 1, 2020</small>
+            <p>Instructor: Romel Mejos</p>
+            <small>Date: 2026</small>
           </div>
         </header>
       )
@@ -770,7 +770,7 @@ Instead of style object using regular styling method is more easy than the one a
       const footer = (
         <footer>
           <div className='footer-wrapper'>
-            <p>Copyright 2020</p>
+            <p>Copyright 2026</p>
           </div>
         </footer>
       )
@@ -833,7 +833,7 @@ const title = 'Getting Started React'
 const subtitle = 'JavaScript Library'
 const firstName = 'Asabeneh'
 const lastName = 'Yetayeh'
-const date = 'Oct 2, 2020'
+const date = 'Oct 2, 2026'
 
 // JSX element, header
 
@@ -901,7 +901,7 @@ const main = (
 
 We can inject string, number, boolean, array data to JSX but we cannot directly inject an object. We should extract object values first or destructure the content of the object before we inject the data to the JSX element. For instance, let us write firstName and lastName inside an object and extract them to use them inside JSX.
 
-Now, let us put everything together. Here, in the example below, the data is injected dynamically to the JSX. [Live on code pen](https://codepen.io/Asabeneh/full/YzXWgpZ)
+Now, let us put everything together. Here, in the example below, the data is injected dynamically to the JSX. 
 
 ```html
 <!DOCTYPE html>
@@ -1018,7 +1018,7 @@ Now, let us put everything together. Here, in the example below, the data is inj
         firstName: 'Asabeneh',
         lastName: 'Yetayeh',
       }
-      const date = 'Oct 2, 2020'
+      const date = 'Oct 2, 2026'
 
       // JSX element, header
       const header = (
@@ -1075,7 +1075,7 @@ Now, let us put everything together. Here, in the example below, the data is inj
         </main>
       )
 
-      const copyRight = 'Copyright 2020'
+      const copyRight = 'Copyright 2026'
 
       // JSX element, footer
       const footer = (
@@ -1228,7 +1228,7 @@ In the following code example, the list is now containing list elements and it i
         firstName: 'Asabeneh',
         lastName: 'Yetayeh',
       }
-      const date = 'Oct 2, 2020'
+      const date = 'Oct 2, 2026'
 
       // JSX element, header
       const header = (
@@ -1286,7 +1286,7 @@ In the following code example, the list is now containing list elements and it i
         </main>
       )
 
-      const copyRight = 'Copyright 2020'
+      const copyRight = 'Copyright 2026'
 
       // JSX element, footer
       const footer = (
@@ -1434,7 +1434,7 @@ As you can see above, now the lists are formatted properly, but there is a warni
         firstName: 'Asabeneh',
         lastName: 'Yetayeh',
       }
-      const date = 'Oct 2, 2020'
+      const date = 'Oct 2, 2026'
 
       // JSX element, header
       const header = (
@@ -1461,7 +1461,7 @@ As you can see above, now the lists are formatted properly, but there is a warni
       )
 
       const yearBorn = 1820
-      const currentYear = 2020
+      const currentYear = 2026
       const age = currentYear - yearBorn
       const personAge = (
         <p>
@@ -1492,7 +1492,7 @@ As you can see above, now the lists are formatted properly, but there is a warni
         </main>
       )
 
-      const copyRight = 'Copyright 2020'
+      const copyRight = 'Copyright 2026'
 
       // JSX element, footer
       const footer = (
