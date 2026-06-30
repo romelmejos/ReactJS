@@ -11,6 +11,9 @@
 
 - [Setting Up](#setting-up)
   - [Node](#node)
+  - [Install a Build Tool Vite and Create a React Application](#Install)
+  - [Module](#module)
+  - [Package](#package)
   - [Module](#module)
   - [Package](#package)
   - [Node Package Manager(NPM)](#node-package-managernpm)
@@ -38,11 +41,11 @@ Node is a JavaScript runtime environment that allows JavaScript to run on the se
 
 If you do not have node, install it. Install [node.js](https://nodejs.org/en/).
 
-![Node download]
+# Node download
 
 After downloading double click and install
 
-![Install node]
+# Install node
 
 We can check if node is installed on our local machine, by opening our device terminal or command prompt, and writing the following command:
 
@@ -50,7 +53,8 @@ We can check if node is installed on our local machine, by opening our device te
 User $ node -v
 v22.12.0
 ```
-### Install a Build Tool Vite and Create a React Application
+
+## Install a Build Tool Vite and Create a React Application
 
 When you have Node.js installed, you can start creating a React application by choosing a build tool.
 
@@ -89,11 +93,11 @@ VITE v8.0.15 ready in 262 ms
 A new browser window will pop up with your newly created React App! If not, open your browser and type localhost:5173 in the address bar.
 
 
-### Your First React App
+## Your First React App
 
 Now that your development environment is set up, let's try to modify the default app to display "Hello, World!".
 
-Modify the React App
+# Modify the React App
 
 Look in the my-react-app directory, and you will find a src folder. Inside the src folder there is a file called App.jsx, open it and it will look like this:
 
@@ -252,7 +256,7 @@ Congratulations! You've just modified your first React application.
 
 
 
-### React Render HTML
+## React Render HTML
 
 React's goal is in many ways to render HTML in a web page.
 
