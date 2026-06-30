@@ -9,28 +9,6 @@
 
 
 
-- [Setting Up](#setting-up)
-  - [Node](#node)
-  - [Install a Build Tool Vite and Create a React Application](#Install)
-  - [Module](#module)
-  - [Package](#package)
-  - [Module](#module)
-  - [Package](#package)
-  - [Node Package Manager(NPM)](#node-package-managernpm)
-  - [Visual Studio Code](#visual-studio-code)
-  - [Browser](#browser)
-  - [Visual Studio Extensions](#visual-studio-extensions)
-  - [Create React App](#create-react-app)
-- [Your first React App](#your-first-react-app)
-  - [React Boilerplate](#react-boilerplate)
-  - [Styles in JSX](#styles-in-jsx)
-  - [Injecting data to JSX elements](#injecting-data-to-jsx-elements)
-  - [Importing Media Objects in React](#importing-media-objects-in-react)
-- [Exercises](#exercises)
-  - [Exercises: Level 1](#exercises-level-1)
-  - [Exercises: Level 2](#exercises-level-2)
-  - [Exercises: Level 3](#exercises-level-3)
-
 # Setting Up
 
 In the previous section, we learned about JSX and we accessed the React and ReactDOM package using CDN. However, in real projects instead of CDN you will use the create-react-app package to generate a React project starter(boilerplate). The initial _create-react-app_ was released on Jul 22, 2016. Before this time, developers used to configure webpack with a JavaScript module bundler, babel and all the necessary packages manually and this used to take half an hour or maybe more. Now, create-react-app will take care of everything and you will be in charge of only developing the product, instead of spending too much time configuring and setting up projects. Before we start using different tools, let's have a brief introduction to all the tools we are going to use in this challenge. You do not have to understand everything, but I will try to give a very short introduction to some of the tools and technologies that we use when we work with React.
