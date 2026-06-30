@@ -43,9 +43,9 @@ This section covers prerequisites to get started with React. You should have a g
 - CSS
 - JavaScript
 
-If you have the skills mentioned above, you will enjoy doing React. The 30 Days Of React challenge contains everything you need to know about react. In every section, it has some exercises and mini-projects, and it is recommended to work on them. This 30 Days Of React challenge will help you learn the latest version of React and the old version, step by step. The topics are broken down into 30 days, where each day contains several topics with easy-to-understand explanations, real-world examples and many hands-on exercises.
+If you have the skills mentioned above, you will enjoy doing React. This repo challenge contains everything you need to know about react. In every section, it has some exercises and mini-projects, and it is recommended to work on them. This  will help you learn the latest version of React and the old version, step by step. The topics are broken down, where each day contains several topics with easy-to-understand explanations, real-world examples and many hands-on exercises.
 This challenge is designed for beginners and professionals who want to build a web application using React and JavaScript.
-Once in a while you may need different dummy data to work with React. You can use the following [dummy data generator](https://www.30daysofreact.com/dummy-data) to generate different data.
+
 
 ### 1. What is React?
 
@@ -87,8 +87,8 @@ JSX stands for JavaScript XML. JSX allows us to write HTML elements with JavaScr
 // we don't need to use quotes with JSX
 
 const jsxElement = <h1>I am a JSX element</h1>
-const welcome = <h1>Welcome to 30 Days of React Challenge</h1>
-const data = <small>Oct 2, 2020</small>
+const welcome = <h1>Welcome to React Challenge</h1>
+const data = <small>June 2026</small>
 ```
 
 The above strange looking code seems like JavaScript and it seems like , but it is not JavaScript and it seems like HTML but not completely an HTML element. It is a mix of JavaScript and an HTML elements. JSX can allow us to use HTML in JavaScript. The HTML element in the JSX above is _h1_ and _small_.
@@ -114,7 +114,7 @@ Let us add a subtitles and other contents to this JSX element by adding addition
 ```js
 const header = (
   <header>
-    <h1>Welcome to 30 Days Of React</h1>
+    <h1>Welcome to React</h1>
     <h2>Getting Started React</h2>
     <h3>JavaScript Library</h3>
   </header>
@@ -126,7 +126,7 @@ Let us keep adding more elements. Additional HTML elements to display the author
 ```js
 const header = (
   <header>
-    <h1>Welcome to 30 Days Of React</h1>
+    <h1>Welcome to React</h1>
     <h2>Getting Started React</h2>
     <h3>JavaScript Library</h3>
     <p>Asabeneh Yetayeh</p>
@@ -145,11 +145,11 @@ We comment codes for different reasons and it is also good to know how to commen
 {
   /*
  <header>
-    <h1>Welcome to 30 Days Of React</h1>
+    <h1>Welcome to  React</h1>
     <h2>Getting Started React</h2>
     <h3>JavaScript Library</h3>
     <p>Asabeneh Yetayeh</p>
-    <small>Oct 2, 2020</small>
+    <small>2026</small>
   </header>
 
 */
@@ -166,7 +166,7 @@ To render a JSX element to HTML document, we should first create an index HTML. 
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>30 Days Of React Challenge</title>
+    <title>React Challenge</title>
   </head>
 
   <body>
@@ -185,7 +185,7 @@ As you can see from the above index.html, we have one div with a class root and 
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>30 Days Of React Challenge</title>
+    <title> React Challenge</title>
   </head>
 
   <body>
@@ -206,7 +206,7 @@ The babel library is linked to our document and now we can make use of it. The n
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>30 Days Of React Challenge</title>
+    <title>React Challenge</title>
   </head>
 
   <body>
@@ -230,7 +230,7 @@ The babel library is linked to our document and now we can make use of it. The n
 
 Now the index.html has everything we need to write React code. Let us get the root element using document.querySelect('.root') and assign it to a variable name rootElement. The is the only place we directly interact with DOM.
 
-Now, you knew JSX and JSX element. Let us render the JSX element on the browser, in order to do so we need the React and ReactDOM library. In addition to the React and ReactDOM we need babel to transpile the JSX to JavaScript code. The ReactDOM package has a method render. The render method takes two arguments:a JSX element or a component and the root document. See the code below. [Live on code pen](https://codepen.io/Asabeneh/full/JjdbjqK).
+Now, you knew JSX and JSX element. Let us render the JSX element on the browser, in order to do so we need the React and ReactDOM library. In addition to the React and ReactDOM we need babel to transpile the JSX to JavaScript code. The ReactDOM package has a method render. The render method takes two arguments:a JSX element or a component and the root document. 
 
 ```html
 <!DOCTYPE html>
@@ -238,7 +238,7 @@ Now, you knew JSX and JSX element. Let us render the JSX element on the browser,
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>30 Days Of React Challenge</title>
+    <title> React Challenge</title>
   </head>
 
   <body>
@@ -301,7 +301,7 @@ Let us render more content. To render more content, the JSX element should have 
       // JSX element
       const header = (
         <header>
-          <h1>Welcome to 30 Days Of React</h1>
+          <h1>Welcome to   Of React</h1>
           <h2>Getting Started React</h2>
           <h3>JavaScript Library</h3>
           <p>Asabeneh Yetayeh</p>
@@ -354,7 +354,7 @@ Now, we have three JSX elements: the header, main and footer. The best way to re
 // JSX element for the header part of the website
 const header = (
   <header>
-    <h1>Welcome to 30 Days Of React</h1>
+    <h1>Welcome to React</h1>
     <h2>Getting Started React</h2>
     <h3>JavaScript Library</h3>
     <p>Asabeneh Yetayeh</p>
@@ -391,7 +391,7 @@ const app = (
 )
 ```
 
-Now, let us put everything together and render it to the browser. [Live on code pen](https://codepen.io/Asabeneh/full/MWwbYWg).
+
 
 ```html
 <!DOCTYPE html>
@@ -399,7 +399,7 @@ Now, let us put everything together and render it to the browser. [Live on code 
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>30 Days Of React Challenge</title>
+    <title> React Challenge</title>
   </head>
 
   <body>
@@ -421,7 +421,7 @@ Now, let us put everything together and render it to the browser. [Live on code 
       // JSX element, header
       const header = (
         <header>
-          <h1>Welcome to 30 Days Of React</h1>
+          <h1>Welcome to React</h1>
           <h2>Getting Started React</h2>
           <h3>JavaScript Library</h3>
           <p>Asabeneh Yetayeh</p>
@@ -486,7 +486,7 @@ const header = (
   <header
     style={{ border: '2px solid orange', color: 'black', fontSize: '18px' }}
   >
-    <h1>Welcome to 30 Days Of React</h1>
+    <h1>Welcome to  React</h1>
     <h2>Getting Started React</h2>
     <h3>JavaScript Library</h3>
     <p>Asabeneh Yetayeh</p>
@@ -500,7 +500,7 @@ const style = { border: '2px solid orange', color: 'black', fontSize: '18px' }
 
 const header = (
   <header style={style}>
-    <h1>Welcome to 30 Days Of React</h1>
+    <h1>Welcome to React</h1>
     <h2>Getting Started React</h2>
     <h3>JavaScript Library</h3>
     <p>Asabeneh Yetayeh</p>
@@ -539,7 +539,7 @@ Now, you know how to use the inline style and how to use className. Let us style
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>30 Days Of React Challenge</title>
+    <title> React Challenge</title>
   </head>
 
   <body>
@@ -570,7 +570,7 @@ Now, you know how to use the inline style and how to use className. Let us style
       const header = (
         <header style={headerStyles}>
           <div className='header-wrapper'>
-            <h1>Welcome to 30 Days Of React</h1>
+            <h1>Welcome to React</h1>
             <h2>Getting Started React</h2>
             <h3>JavaScript Library</h3>
             <p>Asabeneh Yetayeh</p>
@@ -635,7 +635,7 @@ Instead of style object using regular styling method is more easy than the one a
       rel="stylesheet"
     />
 
-    <title>30 Days Of React Challenge</title>
+    <title> React Challenge</title>
     <style>
       /* == General style === */
       * {
@@ -737,7 +737,7 @@ Instead of style object using regular styling method is more easy than the one a
       const header = (
         <header>
           <div className='header-wrapper'>
-            <h1>Welcome to 30 Days Of React</h1>
+            <h1>Welcome to  React</h1>
             <h2>Getting Started React</h2>
             <h3>JavaScript Library</h3>
             <p>Instructor: Asabeneh Yetayeh</p>
@@ -798,12 +798,12 @@ Instead of style object using regular styling method is more easy than the one a
 So far, we used static data on the JSX elements, but we can also pass different data types as a dynamic data. The dynamic data could be string, number, boolean, array or object. Let us see each of the data types step by step. To inject data to a JSX we use the {} bracket.
 
 ```js
-const welcome = 'Welcome to 30 Days Of React'
+const welcome = 'Welcome to  React'
 const title = 'Getting Started React'
 const subtitle = 'JavaScript Library'
 const authorFirstName = 'Asabeneh'
 const authorLastName = 'Yetayeh'
-const date = 'Oct 1, 2020'
+const date = '2026'
 
 // JSX element, header
 const header = (
@@ -828,7 +828,7 @@ Similar to the header JSX element, we can implement data injection to main and f
 In this section we inject only strings
 
 ```js
-const welcome = 'Welcome to 30 Days Of React'
+const welcome = 'Welcome to  React'
 const title = 'Getting Started React'
 const subtitle = 'JavaScript Library'
 const firstName = 'Asabeneh'
@@ -914,7 +914,7 @@ Now, let us put everything together. Here, in the example below, the data is inj
       rel="stylesheet"
     />
 
-    <title>30 Days Of React Challenge</title>
+    <title>React Challenge</title>
     <style>
       /* == General style === */
       * {
@@ -1011,7 +1011,7 @@ Now, let us put everything together. Here, in the example below, the data is inj
       // To get the root element from the HTML document
       const rootElement = document.querySelector('.root')
       // JSX element, header
-      const welcome = 'Welcome to 30 Days Of React'
+      const welcome = 'Welcome to React'
       const title = 'Getting Started React'
       const subtitle = 'JavaScript Library'
       const author = {
@@ -1124,7 +1124,7 @@ In the following code example, the list is now containing list elements and it i
       rel="stylesheet"
     />
 
-    <title>30 Days Of React Challenge</title>
+    <title>React Challenge</title>
     <style>
       /* == General style === */
       * {
@@ -1221,7 +1221,7 @@ In the following code example, the list is now containing list elements and it i
       // To get the root element from the HTML document
       const rootElement = document.querySelector('.root')
       // JSX element, header
-      const welcome = 'Welcome to 30 Days Of React Challenge'
+      const welcome = 'Welcome to React Challenge'
       const title = 'Getting Started React'
       const subtitle = 'JavaScript Library'
       const author = {
@@ -1329,7 +1329,7 @@ As you can see above, now the lists are formatted properly, but there is a warni
       rel="stylesheet"
     />
 
-    <title>30 Days Of React Challenge</title>
+    <title> React Challenge</title>
     <style>
       /* == General style === */
       * {
@@ -1427,7 +1427,7 @@ As you can see above, now the lists are formatted properly, but there is a warni
       // To get the root element from the HTML document
       const rootElement = document.querySelector('.root')
       // JSX element, header
-      const welcome = 'Welcome to 30 Days Of React Challenge'
+      const welcome = 'Welcome to React Challenge'
       const title = 'Getting Started React'
       const subtitle = 'JavaScript Library'
       const author = {
