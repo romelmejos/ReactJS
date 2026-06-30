@@ -3,28 +3,6 @@
   
 </div>
 
-[<< Day 4](../04_Day_Component/04_components.md) | [Day 6 >>](../06_Day_Map_List_Keys/06_map_list_keys.md)
-
-![30 Days of React banner](../images/30_days_of_react_banner_day_5.jpg)
-
-- [Props](#props)
-  - [Props in Functional Component](#props-in-functional-component)
-  - [What is props?](#what-is-props)
-  - [Props object](#props-object)
-    - [Different data type props](#different-data-type-props)
-    - [String props type](#string-props-type)
-    - [Number props type](#number-props-type)
-    - [Boolean props type](#boolean-props-type)
-    - [Array props type](#array-props-type)
-    - [Object props type](#object-props-type)
-    - [Function prop types](#function-prop-types)
-  - [Destructuring props](#destructuring-props)
-  - [propTypes](#proptypes)
-  - [defaultProps](#defaultprops)
-- [Exercises: Components and Props](#exercises-components-and-props)
-  - [Exercises: Level 1](#exercises-level-1)
-  - [Exercises: Level 2](#exercises-level-2)
-  - [Exercises: Level 3](#exercises-level-3)
 
 # React Props
 
